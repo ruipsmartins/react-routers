@@ -1,13 +1,20 @@
 import React, { Component } from "react";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
 
 class App extends Component {
   constructor(props) {
     super(props);
+    this.state = {};
   }
-  state = {};
+
   render() {
-    return <h1>hello world</h1>;
+    return (
+      <div>
+        <h1>Hello from App</h1>
+        <a href="/profile">Profiles</a>
+      </div>
+    );
   }
 }
 
